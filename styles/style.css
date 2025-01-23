@@ -60,7 +60,17 @@
 .white{
     color: #FFFFFF;
 }
-
+.story-header{
+    font-size: 2.8rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.story-card-description{
+    padding-left: 38px;
+}
 
 /* navbar related style */
 .navbar{
@@ -151,6 +161,9 @@
 .card-img{
     margin-bottom: 45px;
 }
+.std-header{
+    margin-bottom: 80px;
+}
 .card-header{
     font-size: 1.5rem;
     font-weight: 700;
@@ -182,61 +195,62 @@
     font-weight: 700;
     color: #8700FF;
 }
+.curriculum-btn{
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
 /* stories section related style */
+
 .stories{
     background: url('../assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
     padding: 60px 0;
-
 }
-.story-container{
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-}
-
-.story-section{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
+.story-content{
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
-#box-i{
-    grid-row: span 2;
+.small-heading-story{
+    flex-direction: column;
+    gap: 20px;
 }
-.story-header{   
-    font-size: 2.8rem;
-    font-weight: 700;
-    /* margin: 40px auto; */
+.story-sect-header{
+    display: flex;
     text-align: center;
 }
-.story-description{
-    padding: 50px 70px 30px 40px;
-}
-.story-img{
-    width: 100%;
-
-}
-.story-box{
+.story1{
     border-radius: 16px;
     background: rgb(255, 255, 255);
-
 }
-.story-img img{
-    border-radius: 10px;
-}
-.description > h4{
+.s-story{
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
     font-size: 0.9rem;
     font-weight: 700;
-    margin: 35px 60px 20px 35px;
-}
-.story-btn{
     text-align: center;
 }
+.s-story h5{
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 20px auto;
+}
+.str-content{
+    gap: 20px;
+}
+.story-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
 /* footer-section related style */
 .footer-section{
     background: rgb(1, 172, 253);
     color: #FFFFFF;
     padding: 123px 220px 175px 140px;
+    justify-content: space-evenly;
 }
 .footer-container{
     display: grid;
@@ -258,10 +272,19 @@
 .school-link a{
     text-decoration: none;
 }
-@media screen and (min-width:1600px) {
+.horizontal-line{
+    color:0.5px solid rgb(254, 163, 1);;
+}
+
+
+@media screen and (min-width:577px) {
     .logo{
         display:none;
     }
+    .horizontal-line{
+        display: none;
+    }
+
 }
 
 
@@ -281,17 +304,25 @@
     .card-container{
         display: flex;
         flex-direction: column;
+        margin: 16px 12px;
     }
-    .story-section{
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    #box-i{
+    .curriculum-btn img{
         display: none;
     }
-    .footer-container{
-        display: flex;
-        flex-direction: column;
+    .story1{
+        display: none;
     }
+    .s-story img{
+        width: 173.27px;
+        height: 105.39px;
+    }
+    .footer-section{
+        flex-direction: column;
+        padding: 20px 20px;
+        gap: 30px;
+    }
+    .curriculam-container h1{
+        margin: 40px 55px 20px 90px;
+    }
+    
 }
