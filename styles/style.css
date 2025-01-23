@@ -71,6 +71,11 @@
 .story-card-description{
     padding-left: 38px;
 }
+.card-description{
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #808080;
+}
 
 /* navbar related style */
 .navbar{
@@ -244,7 +249,9 @@
     align-items: center;
     margin-top: 80px;
 }
-
+.box-1-card-header{
+    margin-top: 60px;
+}
 /* footer-section related style */
 .footer-section{
     background: rgb(1, 172, 253);
